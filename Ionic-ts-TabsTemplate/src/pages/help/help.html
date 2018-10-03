@@ -1,0 +1,24 @@
+<!-- Page header -->
+<ion-header>
+  <ion-navbar color="button-color">
+    <ion-title>
+      {{ 'HELP.title' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Drop down list which shows information -->
+<ion-content>
+  <ion-list id="list">
+    <ion-item *ngFor="let d of helpinfo; let i = index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}"
+      class="nopadding">
+      <ion-item no-lines>
+        <ion-icon class="dropdown-icon" item-left color="button-color" [name]="isGroupShown(i) ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+        <p class="title">{{ d.title | translate }}</p>
+      </ion-item>
+      <div class="descbox">
+        <p class="text">{{ d.description | translate }}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "IonHeart",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,103 @@
+<!-- Page header -->
+<ion-header>
+    <ion-navbar color="button-color">
+        <ion-title>
+            <!--{{ 'MEASUREMENTDATA' | translate }}-->
+          Lägg Till Värde
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<!-- Drop down list of available measurement types -->
+<ion-content>
+  <div id="dropdown">
+      <ion-item no-lines>
+          <label>{{ 'MEASUREMENTDATA' | translate }}</label>
+          <select [(ngModel)]="selectedType" id="dropdownlist">
+              <option *ngFor="let measurementTypes of measurementTypes">{{ measurementTypes }}</option>
+          </select>
+      </ion-item>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <p>Välj Värde</p>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-select [(ngModel)]="measurementTypes">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-card-content>
+  </ion-card>
+  
+
+  <!-- Measurement value input field -->
+  <div id="input">
+    <ion-item *ngIf="selectedType != moodData && selectedType != bloodPressureData">
+      <!-- Set label for measurement type -->
+      <ion-label *ngIf="selectedType == commentData" color="button-color">{{ 'WRITE_COMMENT' | translate }}</ion-label>
+      <ion-label *ngIf="selectedType != commentData" color="button-color">{{ 'NEW_DATA' | translate }}</ion-label>
+      <ion-input [(ngModel)]="registeredValue">input här</ion-input>
+    </ion-item>
+    <!-- If selected type is blood pressure use two input field for high value and low value -->
+    <ion-row *ngIf="selectedType == bloodPressureData">
+      <ion-item no-lines>
+        <ion-label color="button-color">
+          {{ 'NEW_DATA' | translate }}
+        </ion-label>
+      </ion-item>
+      <ion-col col-5 id="item1">
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="bloodPressureHighValue"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-2>
+        <textarea readonly>/</textarea>
+      </ion-col>
+      <ion-col col-5 id="item2">
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="bloodPressureLowValue"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <!-- Register button for blood pressure -->
+    <ion-item no-lines *ngIf="selectedType == bloodPressureData">
+      <button id="regBPButton" ion-button color="button-color" (click)="registerData()">
+        {{ 'REGISTER' | translate }}
+      </button>
+    </ion-item>
+    <!-- Register button for all types except blood pressure and mood -->
+    <ion-item no-lines *ngIf="selectedType != moodData && selectedType != bloodPressureData">
+      <button id="regButton" ion-button color="button-color" item-end (click)="registerData()">
+        {{ 'REGISTER' | translate }}
+      </button>
+    </ion-item>
+  </div>
+  <!-- If selected type is mood, show five smiley icons-->
+  <div id="moodInput">
+    <ion-item *ngIf="selectedType == moodData">
+      <button id="mood-happy" (click)="setColor('mood-happy')" (click)="setMood(5)">
+        <ion-icon name="icon-happy"></ion-icon>
+      </button>
+      <button id="mood-smile" (click)="setColor('mood-smile')" (click)="setMood(4)">
+        <ion-icon name="icon-smile"></ion-icon>
+      </button>
+      <button id="mood-neutral" (click)="setColor('mood-neutral')" (click)="setMood(3)">
+        <ion-icon name="icon-neutral"></ion-icon>
+      </button>
+      <button id="mood-sad" (click)="setColor('mood-sad')" (click)="setMood(2)">
+        <ion-icon name="icon-sad"></ion-icon>
+      </button>
+      <button id="mood-crying" (click)="setColor('mood-crying')" (click)="setMood(1)">
+        <ion-icon name="icon-crying"></ion-icon>
+      </button>
+    </ion-item>
+    <!-- Register button for mood -->
+    <ion-item no-lines *ngIf="selectedType == moodData">
+      <button id="moodRegButton" ion-button color="button-color" item-right (click)="registerData(); ">
+        {{ 'REGISTER' | translate }}
+      </button>
+    </ion-item>
+  </div>
+</ion-content>

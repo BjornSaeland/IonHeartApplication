@@ -1,0 +1,36 @@
+page-home {
+
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 15vw;
+}
+
+.btn {
+  display: block;
+  height: 30%;
+  width: 45%;
+  font-size: 5vw;
+  white-space: normal;
+}
+
+.btn ion-icon {
+  margin-bottom: 10px !important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+ion-icon {
+  font-size: 200%;
+}
+
+h5 {
+  white-space: pre-line;
+}

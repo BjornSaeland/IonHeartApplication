@@ -1,0 +1,25 @@
+.nopadding {
+    padding: 0;
+}
+
+.descbox {
+    padding: 0 16px;
+    height: 0;
+    transition: height 0.2s ease-in;
+}
+
+.title {
+    font-size: 150% !important;
+    color: #102e81 !important;
+    padding-bottom: 0px;
+}
+
+.text {
+    font-size: 120% !important;
+}
+
+.dropdown-icon {
+    width: 24px;
+    font-size: 350% !important;
+}
+

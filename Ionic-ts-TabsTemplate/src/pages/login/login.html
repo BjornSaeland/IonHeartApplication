@@ -1,0 +1,22 @@
+<ion-content color="bg-color" padding>
+  <h1>{{ 'LOGIN' | translate }}</h1>
+  <div id="input">
+
+    <!-- Input username -->
+    <ion-item class="nopadding">
+      <ion-label id="username_input" class="padding-16" color="button-color" inline>{{ 'USERNAME' | translate }}</ion-label>
+      <ion-input [(ngModel)]="loginName"></ion-input>
+    </ion-item>
+
+    <!-- Input password -->
+    <ion-item class="nopadding">
+      <ion-label id="password_input" class="padding-16" color="button-color" inline>{{ 'PASSWORD' | translate }}</ion-label>
+      <ion-input type="password" [(ngModel)]="loginPass"></ion-input>
+    </ion-item>
+
+    <!-- Login button -->
+    <button ion-button class="btn-login" color="button-color" (click)="login(username)">
+      {{ 'LOGIN' | translate }}
+    </button>
+  </div>
+</ion-content>

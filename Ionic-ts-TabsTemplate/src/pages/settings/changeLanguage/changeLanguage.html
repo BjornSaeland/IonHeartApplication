@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar color="button-color">
+        <ion-title>
+            {{ 'CHANGELANG' | translate }}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <!--<button ion-button *ngFor="let d of languages; let i = index" (click)="useLanguage(d.title)"><img class="btnimg" src="../../../assets/icon/{{d.title}}.png" item-left>{{d.title}}</button>-->
+
+    <ion-list radio-group>
+        <ion-item *ngFor="let d of languages; let i = index">
+            <img class="btnimg" src="assets/imgs/{{d.name}}.png" item-left>
+            <ion-label>{{d.title}}</ion-label>
+            <ion-radio *ngIf="currentLang === d.name" checked (click)="useLanguage(d.name)"></ion-radio>
+            <ion-radio *ngIf="currentLang !== d.name" (click)="useLanguage(d.name)"></ion-radio>
+        </ion-item>
+    </ion-list>
+</ion-content>

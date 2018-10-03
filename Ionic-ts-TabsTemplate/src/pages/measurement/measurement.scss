@@ -1,0 +1,58 @@
+#input {
+    padding-top: 5vw;
+}
+
+#moodInput {
+    padding-top: 0vw;
+}
+
+label {
+    font-size: 4.5vw;
+}
+
+option {
+    font-size: 4.5vw;
+}
+
+select {
+    margin-left: 3vw;
+    width: 50%;
+    font-size: 4.5vw;
+    height: 20%;
+}
+
+.form-input, .form-input input {
+    margin-top: 10px;
+}
+
+#dropdown {
+    padding-top: 5vw;
+}
+
+#mood-smile, #mood-sad, #mood-neutral, #mood-crying, #mood-happy {
+    background-color: transparent;
+    color: black;
+}
+
+#regButton, #moodRegButton, #regBPButton {
+    width: 100%;
+    height: 10vw;
+    font-size: 5vw;
+}
+
+p {
+    font-size: 10vw;
+    text-align: center;
+}
+
+textarea {
+    font-size: 10vw;
+    border-color: transparent;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+#regBPButton {
+    margin-top: 0px;
+}

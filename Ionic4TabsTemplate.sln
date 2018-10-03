@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Ionic4TabsTemplate", "Ionic-ts-TabsTemplate\Ionic4TabsTemplate.jsproj", "{6EE55CC5-D463-4588-910D-9B5426BC0B46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Android = Debug|Android
+		Debug|iOS = Debug|iOS
+		Debug|Windows-AnyCPU = Debug|Windows-AnyCPU
+		Debug|Windows-ARM = Debug|Windows-ARM
+		Debug|Windows-x64 = Debug|Windows-x64
+		Debug|Windows-x86 = Debug|Windows-x86
+		Release|Android = Release|Android
+		Release|iOS = Release|iOS
+		Release|Windows-AnyCPU = Release|Windows-AnyCPU
+		Release|Windows-ARM = Release|Windows-ARM
+		Release|Windows-x64 = Release|Windows-x64
+		Release|Windows-x86 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Android.ActiveCfg = Debug|Android
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Android.Build.0 = Debug|Android
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Android.Deploy.0 = Debug|Android
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|iOS.ActiveCfg = Debug|iOS
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|iOS.Build.0 = Debug|iOS
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|iOS.Deploy.0 = Debug|iOS
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-AnyCPU.ActiveCfg = Debug|Windows-AnyCPU
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-AnyCPU.Build.0 = Debug|Windows-AnyCPU
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-AnyCPU.Deploy.0 = Debug|Windows-AnyCPU
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-ARM.ActiveCfg = Debug|Windows-ARM
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-ARM.Build.0 = Debug|Windows-ARM
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-ARM.Deploy.0 = Debug|Windows-ARM
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-x64.ActiveCfg = Debug|Windows-x64
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-x64.Build.0 = Debug|Windows-x64
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-x64.Deploy.0 = Debug|Windows-x64
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-x86.ActiveCfg = Debug|Windows-x86
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-x86.Build.0 = Debug|Windows-x86
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Debug|Windows-x86.Deploy.0 = Debug|Windows-x86
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Android.ActiveCfg = Release|Android
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Android.Build.0 = Release|Android
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Android.Deploy.0 = Release|Android
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|iOS.ActiveCfg = Release|iOS
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|iOS.Build.0 = Release|iOS
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|iOS.Deploy.0 = Release|iOS
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-AnyCPU.ActiveCfg = Release|Windows-AnyCPU
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-AnyCPU.Build.0 = Release|Windows-AnyCPU
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-AnyCPU.Deploy.0 = Release|Windows-AnyCPU
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-ARM.ActiveCfg = Release|Windows-ARM
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-ARM.Build.0 = Release|Windows-ARM
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-ARM.Deploy.0 = Release|Windows-ARM
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-x64.ActiveCfg = Release|Windows-x64
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-x64.Build.0 = Release|Windows-x64
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-x64.Deploy.0 = Release|Windows-x64
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-x86.ActiveCfg = Release|Windows-x86
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-x86.Build.0 = Release|Windows-x86
+		{6EE55CC5-D463-4588-910D-9B5426BC0B46}.Release|Windows-x86.Deploy.0 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60CC42D1-DBC4-46EB-9537-3B046C78BE6F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cgihearthealth.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ionic-ts-TabsTemplate\\Ionic4TabsTemplate.jsproj
+		SccProjectName1 = Ionic-ts-TabsTemplate
+		SccLocalPath1 = Ionic-ts-TabsTemplate
+	EndGlobalSection
+EndGlobal
